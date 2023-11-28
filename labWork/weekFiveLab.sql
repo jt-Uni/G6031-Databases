@@ -1,6 +1,6 @@
 -- Lab week 5 questions
 
-CREATE TABLE record_label (
+CREATE TABLE recordlabel (
     label_name      VARCHAR(30) PRIMARY KEY,
     webpage         VARCHAR(40),
     house           CHAR(6),
@@ -29,7 +29,7 @@ CREATE TABLE cd (
     is_fronted_by       INTEGER UNSIGNED,
 
     CONSTRAINT fk_cd_label_
-        FOREIGN KEY (released_by) REFERENCES record_label(label_name),
+        FOREIGN KEY (released_by) REFERENCES recordlabel(label_name),
 
     CONSTRAINT fk_cd_artist_
         FOREIGN KEY (is_fronted_by) REFERENCES artist(id_number),

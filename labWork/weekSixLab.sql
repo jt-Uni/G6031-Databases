@@ -64,7 +64,7 @@ SELECT id_number, bio, email
 FROM artist;
 
 -- Part 6:
-INSERT INTO record_label (label_name)
+INSERT INTO recordlabel (label_name)
 VALUES ('Columbia');
 
 INSERT INTO cd (catalog_no, title, publication_date, released_by, is_fronted_by, rating)
